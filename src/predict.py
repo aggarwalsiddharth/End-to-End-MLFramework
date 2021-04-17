@@ -56,6 +56,8 @@ def predict():
             predictions += preds
 
     predictions/=5
+
+    ## to make it 0 and 1
     predictions = np.array(predictions)
     predictions = (predictions>=0.5).astype(int)
 
